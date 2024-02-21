@@ -1,0 +1,17 @@
+[
+    {
+        "foto":"https://images.pexels.com/photos/19196895/pexels-photo-19196895/free-photo-of-zoo-retrato-tigre-gato.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "descripcion": "Es el felino más grande del mundo.",
+        "id_usuario": 2
+    },
+    {
+        "foto":"https://i1.sndcdn.com/artworks-XSeb7HcaRDZ0vumI-fKFRXQ-t500x500.jpg",
+        "descripcion": "Gran mamífero carnívoro félido africano, de pelaje amarillo rojizo, con la cabeza grande.",
+        "id_usuario": 2
+    },
+    {
+        "foto":"https://www.zoopinto.es/wp-content/uploads/2020/04/tienda-gatos-maine-coon.jpg",
+        "descripcion": "Es un animal mamífero porque nace vivo de la madre y mama para alimentarse.",
+        "id_usuario": 2
+    }
+]

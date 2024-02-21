@@ -1,0 +1,11 @@
+<%- include('partials/cabecera')%>
+<section>
+<%- include('partials/nav')%>
+    <% if(admin) {%>
+    <div class="w-full items-center justify-center">
+        <p>WELCOME: <%=admin[0].nombre%></p>
+    </div>
+  <% }%>
+  <%- include('partials/pie')%>
+</section>
+<%- include('partials/footer')%>

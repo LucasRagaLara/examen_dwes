@@ -1,0 +1,15 @@
+<%- include('partials/cabecera')%>
+<section>
+<%- include('partials/nav')%>
+    <% if (usuario_datos){ %>
+        <h1 class="text-3xl text-center mb-4 text-white mt-5">WELCOME: <%=usuario_datos.nombre%></h1>
+        <h3 class="text-3xl text-center text-white mt-5 mb-5"><%=usuario_datos.visitas%></h3>
+        <form action="/coleccion" method="POST" class="flex w-full items-center justify-center mx-auto">
+                <button type="submit" class="rounded outline-none text-white bg-green-900 px-4 py-2 text-center">Guarda tu colección</button>
+        </form>
+    <% }else {%>
+        <p>No hay datos del usuario para mostrar.</p>
+    <% } %>
+    <%- include('partials/pie')%>
+</section>
+<%- include('partials/footer')%>

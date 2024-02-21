@@ -1,0 +1,31 @@
+<%- include('partials/cabecera')%>
+<section>
+<%- include('partials/nav')%>
+    <% if (colecciones){ %>
+        <div class="flex w-full flex-wrap mx-auto items-center justify-center">
+        <% for (coleccion of colecciones){%>
+            <div class="flex flex-col items-center justify-center bg-white shadow h-[20rem] w-[30%] m-4">
+                <img src="<%=coleccion.foto%>" alt="" class="w-[150px] h-[150px] rounded-lg">
+                <p class="text-xl text-black"><%=coleccion.descripcion%></p>
+                <div class="flex">
+                    <form action="/editar" class="flex" method="post">
+                        <input type="hidden" name="id_actualizar" value="<%=coleccion.id%>">
+                        <button type="submit" class="rounded outline-none text-white bg-green-900 px-4 py-2 text-center mr-4">Editar</button>
+                    </form>
+                    <form action="/borrar" class="flex" method="POST">
+                        <input type="hidden" name="id_borrar" value="<%=coleccion.id%>">
+                        <button type="submit" class="rounded outline-none text-white bg-green-900 px-4 py-2 text-center">Eliminar</button>
+                    </form>
+                </div>
+            </div>
+            <% }%>
+        </div>
+    <% }else {%>
+        <div class="w-full flex items-center justify-center flex-col">
+            <p class="text-3xl mx-auto mx-10 text-white text-center mb-5">No hay datos del usuario para mostrar.</p>
+            <a href="anadir" class="rounded outline-none text-white bg-green-900 px-4 py-2 text-center mt-5">Crear nueva</a>
+        </div>
+    <% } %>
+    <%- include('partials/pie')%>
+</section>
+<%- include('partials/footer')%>

@@ -1,0 +1,19 @@
+<%- include('partials/cabecera')%>
+<section>
+<%- include('partials/nav')%>
+    <% if (coleccion){ %>
+        <div class="flex w-full flex-wrap mx-auto items-center justify-center">
+            <div class="flex flex-col items-center justify-center bg-white shadow m-4 p-5 gap-y-10 mx-auto">
+                <form action="/actualizar" class="flex flex-col" method="post">
+                    <input type="text" required minlength="10" placeholder="Foto" class="rounded outline-none text-white bg-green-900 px-4 py-2 text-center mb-4" name="foto" required minlength="10" value="<%=coleccion[0].foto%>">
+                    <textarea name="descripcion" id="" placeholder="descripcion" class="rounded outline-none text-white bg-green-900 px-4 py-2 text-center mb-4 min-h-20" name="descripcion" required minlength="10"><%=coleccion[0].descripcion%></textarea>
+                    <input type="hidden" name="id_actualizar" value="<%=coleccion[0].id%>">
+                    <button type="submit" class="rounded outline-none text-white bg-green-900 px-4 py-2 text-center mr-4">Actualizar</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    <% } %>
+    <%-include('partials/pie')%>
+</section>
+<%- include('partials/footer')%>

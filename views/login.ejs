@@ -1,0 +1,11 @@
+<%- include('partials/cabecera')%>
+<section class="flex flex-col h-screen">
+    <%- include('partials/nav')%>
+    <form action="/users/logueado" method="post" class="flex flex-col w-[20%] mx-auto gap-y-5 items-center justify-center h-[80vh]">
+        <input type="text" placeholder="Correo" name="correo" class="rounded outline-none text-white bg-green-900 px-4 py-2 text-center" required minlength="3">
+        <input type="text" placeholder="Password" name="password" class="rounded outline-none text-white bg-green-900 px-4 py-2 text-center" required minlength="3">
+        <button class="rounded outline-none text-white bg-green-900 px-4 py-2 text-center">Acceder</button>
+    </form>
+    <%- include('partials/pie')%>
+</section>
+<%- include('partials/footer')%>

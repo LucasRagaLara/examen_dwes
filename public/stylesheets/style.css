@@ -1,0 +1,12 @@
+body {
+  background: url('../images/verde.jpg');
+  background-size: 100%;
+  min-height: 100vh;
+}
+
+.footer_estilo{
+  display: flex;
+  bottom: 0px;
+  top: 0px;
+  position: absolute;
+}
