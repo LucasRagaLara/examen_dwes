@@ -1,1 +1,7 @@
 NOTA: EN EL SCRIPT SQL PONER objetos para la tabla en vez de new_table.
+
+MYSQL_ADDON_DB=b1l7rcteqce8xocqukee
+MYSQL_ADDON_HOST=b1l7rcteqce8xocqukee-mysql.services.clever-cloud.com
+MYSQL_ADDON_USER=ukru0prnsd9eyuhy
+MYSQL_ADDON_PASSWORD=wImdzb4wXamNFsFkNJkT
+SECRETO=patata
